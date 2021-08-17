@@ -1,56 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        p {
-            font-family:Arial, Helvetica, sans-serif;
-            color: #6c8186;
-            width: 95%;
-            position: relative;
-            left: 20px;
-        }
-        h2 {
-            font-family:Arial, Helvetica, sans-serif;
-            color: #96aaaf;
-        }
-        body {
-            background-color: #172a32;
-        }
-        a {
-            color: rgb(100, 100, 207);
-        }
-        html, body {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-    </style>
     <head>
-        <title>
-        MiniBot
-        </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This website is the most epik website ever">
+        <title>Epik Website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link href="style1.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="script1.js"></script>
     </head>
     <body>
-        <div class="toptitle">
-            <h2 style="text-align: center; background-color: #111e24; padding: 10px; border: 10px solid #111e24;">
-                MiniBot [
-                <a href="/invite">
-                    Invite 
-                </a>
-                 | 
-                <a href="">
-                    Commands
-                </a>
-                ]
-            </h2>
-        </div>
-        
-        
-        <p>Hello welcome to MiniBot! MiniBot is a discord bot created by Mini#5000.
-        This bot is created because i want to learn Python language😀.
-        Im also working to learn html 😉, as you can see this is my first ever website!😎
-        It doesnt look pretty good😬 but im working on it😏.
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </p>
+        <header>
+            <nav>
+                <label class="logo"> MiniBot</label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#invite">Invite</a></li>
+                    <li><a href="#cmds">Commands</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        
+        <main>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <div id="invite">
+                <h1>«Invite ✉»</h1>
+                <p id="glow">The bot is still in development,
+                     if you wanna invite this you can dm me on discord &lt;Mini#5000&gt; or you can join <a href="https://discord.gg/XKddeJAnwx" style="color: rgb(81, 197, 236);">my server</a>,
+                     also you can dm me suggestions for the bot or if you want to do a collaborate with me 
+                     feel free to message me in discord. 
+
+                </p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+            <p id="home"></p>
+            <div id="cmds" data-aos="fade-up">
+                <p id="glow">
+                    Legends:
+                    &lt;*&gt; = multiple argument
+                </p>
+                
+                <table>
+                    <caption id="glow" style="font-size: 24px; padding: 20px">Commands</caption>
+                    <tr>
+                        <th>Type :</th>
+                        <th>Command :</th>
+                        <th>Usage :</th>
+                        <th>Permisssion :</th>
+                        <th>Return :</th>
+                    </tr>
+                    <tbody>
+                        <!--TOOLS TYPE COMMANDS-->
+                        <tr>
+                            <td>Tools</td>
+                            <td>help</td>
+                            <td>m.help</td>
+                            <td>Everyone</td>
+                            <td> Return this link</td>
+                        </tr>
+                        <tr>
+                            <td>Tools</td>
+                            <td>prefix</td>
+                            <td>m.prefix &lt;new-prefix&gt;</td>
+                            <td>Manage Channel</td>
+                            <td>Changes bot prefix on the server</td>
+                        </tr>
+                        <tr>
+                            <td>Tools</td>
+                            <td>clear</td>
+                            <td>m.clear &lt;num&gt;</td>
+                            <td>Manage Messages</td>
+                            <td>Remove &lt;num&gt; of messages in the channel</td>
+                        </tr>
+                        <tr>
+                            <td>Tools</td>
+                            <td>afk</td>
+                            <td>m.afk &lt;*msg&gt;</td>
+                            <td>Everyone</td>
+                            <td>Sends &lt;*msg&gt; when someone pings you </td>
+                        </tr>
+                        <!--FUN TYPE COMMANDS-->
+                        <tr>
+                            <td>Fun</td>
+                            <td>say</td>
+                            <td>m.say &lt;*msg&gt;</td>
+                            <td>Everyone</td>
+                            <td>Bot will repeat &lt;*msg&gt;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: center; padding: 2px; border-radius: 3px;"><a href="https://stats.uptimerobot.com/3rPRwHmr8O/788938072" target="_blank" style="color: blue; border-radius: 3px; text-align: center;">Click to see bot status</a></p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+        </main>
+        <footer>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
